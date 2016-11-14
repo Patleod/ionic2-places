@@ -4,7 +4,6 @@ import { PlacesPage } from '../places/places'
 import { AddPage } from '../add/add'
 import { AroundPage } from '../around/around'
 import { FriendsPage } from '../friends/friends'
-import { HeaderContentComponent } from '../../components/header-content/header-content'
 
 /*
   Generated class for the Tabs tabs.

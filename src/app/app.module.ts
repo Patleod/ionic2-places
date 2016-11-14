@@ -7,7 +7,7 @@ import { PlacesPage } from '../pages/places/places';
 import { FriendsPage } from '../pages/friends/friends';
 import { AddPage } from '../pages/add/add';
 import { AroundPage } from '../pages/around/around';
-import { HeaderContentComponent } from '../components/header-content';
+import { HeaderContentComponent } from '../components/header-content/header-content';
 
 @NgModule({
   declarations: [

@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { PlacesPage } from '../places/places'
 import { AddPage } from '../add/add'
 import { AroundPage } from '../around/around'
-import { FiendsPage } from '../fiends/fiends'
+import { FriendsPage } from '../friends/friends'
 
 /*
   Generated class for the Tabs tabs.
@@ -20,7 +20,7 @@ export class TabsPage {
   tab1Root: any = PlacesPage;
   tab2Root: any = AddPage;
   tab3Root: any = AroundPage;
-  tab4Root: any = FiendsPage;
+  tab4Root: any = FriendsPage;
 
   constructor(public navCtrl: NavController) {
 

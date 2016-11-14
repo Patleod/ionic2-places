@@ -4,7 +4,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { PlacesPage } from '../pages/places/places';
-import { FiendsPage } from '../pages/fiends/fiends';
+import { FriendsPage } from '../pages/friends/friends';
 import { AddPage } from '../pages/add/add';
 import { AroundPage } from '../pages/around/around';
 
@@ -15,7 +15,7 @@ import { AroundPage } from '../pages/around/around';
     TabsPage,
     PlacesPage,
     AroundPage,
-    FiendsPage,
+    FriendsPage,
     AddPage
   ],
   imports: [
@@ -28,7 +28,7 @@ import { AroundPage } from '../pages/around/around';
     TabsPage,
     PlacesPage,
     AroundPage,
-    FiendsPage,
+    FriendsPage,
     AddPage    
   ],
   providers: []

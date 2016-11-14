@@ -7,6 +7,7 @@ import { PlacesPage } from '../pages/places/places';
 import { FriendsPage } from '../pages/friends/friends';
 import { AddPage } from '../pages/add/add';
 import { AroundPage } from '../pages/around/around';
+import { HeaderContentComponent } from '../components/header-content';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AroundPage } from '../pages/around/around';
     PlacesPage,
     AroundPage,
     FriendsPage,
-    AddPage
+    AddPage,
+    HeaderContentComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,7 +31,8 @@ import { AroundPage } from '../pages/around/around';
     PlacesPage,
     AroundPage,
     FriendsPage,
-    AddPage    
+    AddPage,
+    HeaderContentComponent    
   ],
   providers: []
 })

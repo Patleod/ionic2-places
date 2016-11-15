@@ -1,7 +1,4 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-
-import { TabsPage } from '../../pages/tabs/tabs';
+import { Component, Input } from '@angular/core';
 
 /*
   Generated class for the HeaderContent component.
@@ -15,14 +12,9 @@ import { TabsPage } from '../../pages/tabs/tabs';
 })
 export class HeaderContentComponent {
 
-  text: string;
+  @Input() title: string;
 
-  constructor(public navCtrl: NavController) {
-    console.log('Hello HeaderContent Component');
-    this.text = 'Hello World';
+  constructor() {
   }
 
-  public onClickMenu() {
-    this.navCtrl.push(TabsPage);
-  }
 }

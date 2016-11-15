@@ -1,15 +1,17 @@
-
-<ion-menu [content]="mycontent">
+<ion-menu [content]="content" side="right">
   <ion-content>
-    <ion-list>
-    ...
-    </ion-list>
+    <ion-toolbar>
+      <ion-title>Hello Ionic</ion-title>
+    </ion-toolbar>
+    <div padding>
+      <button ion-button full color="danger" (click)="logout()">Logout</button>
+    </div>
   </ion-content>
 </ion-menu>
 
-<ion-tabs #mycontent>
-  <ion-tab [root]="tab1Root" tabTitle="Places" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="Add" tabIcon="text"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Around" tabIcon="stats"></ion-tab>
-  <ion-tab [root]="tab4Root" tabTitle="Friends" tabIcon="image"></ion-tab>
+<ion-tabs #content>
+  <ion-tab [root]="tab1Root" tabTitle="places" tabIcon="list-box"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="add" tabIcon="add-circle"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="around" tabIcon="map"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="friends" tabIcon="people"></ion-tab>
 </ion-tabs>

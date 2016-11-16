@@ -14,5 +14,7 @@ export class Endpoints {
     return this.API_PATH + "/users";
   }
 
-
+  getPlaces(){
+    return this.API_PATH + "/places";
+  }
 }

@@ -51,5 +51,8 @@ export class Auth {
     this.user = this.jwtHelper.decodeToken(token);
   }
 
-
+  public getPlaces() {
+    return this.authHttp.get(this.endpoints.getPlaces())
+      .map(res => { return res.json(); });
+  }
 }

@@ -22,8 +22,10 @@ export class SignupPage {
   constructor(private navCtrl: NavController,public viewCtrl: ViewController, private auth:Auth) {}
 
   signup(){
+   this.error = 'recording account...';
    this.auth.signup({email:this.email,password:this.password })
      .then((success)=>{
+       this.error = 'Account registrated !'
        this.goTabs();
      },(error)=>{
        this.error = error._body;

@@ -7,8 +7,9 @@ import { Routes } from './app.routes';
 import { AuthHttp, AuthConfig } from 'angular2-jwt';
 import { Http } from '@angular/http';
 import { Storage } from '@ionic/storage';
-import { Endpoints } from '../providers/endpoints'
-import { Auth } from '../providers/auth'
+import { Endpoints } from '../providers/endpoints';
+import { Auth } from '../providers/auth';
+import { Places } from '../providers/places';
 
 const app:Array<any>=[MyApp];
 const pages:Array<any> = Routes.getPages();
@@ -49,6 +50,7 @@ export function getAuthHttp(http) {
    },
    Endpoints,
    Auth,
+   Places
   ],
   bootstrap: [IonicApp],
   entryComponents: app.concat(pages),

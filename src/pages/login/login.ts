@@ -29,8 +29,10 @@ export class LoginPage {
     modal.present();
   }
   public signIn() {
-    this.auth.signin({email:this.email,password:this.password })
+    this.error = 'authenticating....';
+    this.auth.login({email:this.email,password:this.password })
      .then((success)=>{
+       this.error = 'authentication OK !';
        this.goTabs();
      },(error)=>{
        this.error = error._body;

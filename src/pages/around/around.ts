@@ -18,7 +18,7 @@ export class AroundPage {
 
   constructor(public navCtrl: NavController) {}
   
-  ionViewDidLoad() {
+  ionViewDidEnter() {
     this.map.init(46.191348, 6.135793, 20);
   }
 

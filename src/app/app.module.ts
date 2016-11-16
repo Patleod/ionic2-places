@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
-import { Http } from '@angular/http';
-
 import { IonicApp, IonicModule } from 'ionic-angular';
-import { Storage } from '@ionic/storage';
-import { AuthHttp, AuthConfig } from 'angular2-jwt';
-
 import { MyApp } from './app.component';
 import { HeaderContentComponent } from '../components/header-content/header-content';
 import { Routes } from './app.routes';
-import { Endpoints } from '../providers/endpoints'
-import { Auth } from '../providers/auth'
+import { AuthHttp, AuthConfig } from 'angular2-jwt';
+import { Http } from '@angular/http';
+import { Storage } from '@ionic/storage';
+import {Endpoints} from '../providers/endpoints'
+import {Auth} from '../providers/auth'
 
 const app:Array<any>=[MyApp];
 const pages:Array<any> = Routes.getPages();

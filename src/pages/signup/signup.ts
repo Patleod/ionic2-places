@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { ViewController, NavController } from 'ionic-angular';
-
-import { Auth } from '../../providers/auth';
+import {Auth} from '../../providers/auth';
 import { Routes } from '../../app/app.routes';
 
 /*

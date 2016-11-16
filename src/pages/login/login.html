@@ -24,6 +24,11 @@
       <ion-label fixed>Password</ion-label>
       <ion-input type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
+    
+    <ion-item *ngIf="error" class="signup_error">
+      {{error}}
+    </ion-item>
+    
     <button full ion-button (click)="signIn()">Sign In</button>
     <button ion-button item-center outline (click)="openSignup()">Sign up</button>
 

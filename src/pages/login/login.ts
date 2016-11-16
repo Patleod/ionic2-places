@@ -29,7 +29,6 @@ export class LoginPage {
     modal.present();
   }
   public signIn() {
-    debugger;
     this.auth.signin({email:this.email,password:this.password })
      .then((success)=>{
        this.goTabs();

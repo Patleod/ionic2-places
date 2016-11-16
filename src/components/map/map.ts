@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 */
 @Component({
   selector: 'map',
-  templateUrl: '<div id="map_aroud" height="100%" width="100%"></div>'
+  template: '<div id="map_aroud" height="100%" width="100%"></div>'
 })
 export class MapComponent {
   map: google.maps.Map;

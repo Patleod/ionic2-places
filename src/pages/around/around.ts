@@ -14,13 +14,12 @@ import { MapComponent } from '../../components/map/map';
 })
 export class AroundPage {
   @ViewChild(MapComponent) 
-    private map: MapComponent;
+  private map: MapComponent;
 
   constructor(public navCtrl: NavController) {}
-
   
   ionViewDidLoad() {
-    this.map.init(46.191348, 6.135793);
+    this.map.init(46.191348, 6.135793, 20);
   }
 
 }

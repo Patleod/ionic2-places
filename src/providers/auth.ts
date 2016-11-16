@@ -32,6 +32,15 @@ export class Auth {
           return data;
         });
   }
+  signin(credentials) {
+    let observable = this.authHttp.post(this.endpoints.getLogin(),
+      JSON.stringify(credentials),{ headers: this.contentHeader })
+      .map(res => { return res.json()})
+        return observable.toPromise().then((data)=>{
+          this.authSuccess(data.id_token);
+          return data;
+        });
+  }
 
   authSuccess(id_token) {
     this.local.set('id_token', id_token);

@@ -30,7 +30,7 @@ export class LoginPage {
   }
   public signIn() {
     debugger;
-    this.auth.signup({email:this.email,password:this.password })
+    this.auth.signin({email:this.email,password:this.password })
      .then((success)=>{
        this.goTabs();
      },(error)=>{

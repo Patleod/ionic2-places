@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Auth } from '../../providers/auth';
 
 /*
   Generated class for the Places page.
@@ -11,12 +12,31 @@ import { NavController } from 'ionic-angular';
   selector: 'page-places',
   templateUrl: 'places.html'
 })
-export class PlacesPage {
-
-  constructor(public navCtrl: NavController) {}
+export class PlacesPage implements OnInit {
+  
+  public places: Array<any> = new Array<any>();
+  public error: string;
+  
+  constructor(public navCtrl: NavController, public auth: Auth) {}
 
   ionViewDidLoad() {
     console.log('Hello PlacesPage Page');
+  }
+  
+  ngOnInit() {
+    this.getPlaces();
+  }
+  
+  public getPlaces() {
+    this.auth.getPlaces()
+      .subscribe(
+        places => {
+          this.places = places;
+          console.debug('places : ' + places + ' found !');
+        },
+        err => this.error = err,
+        () => console.debug('Observable getPlaces terminated !!')
+      )
   }
 
 }

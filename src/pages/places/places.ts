@@ -25,7 +25,6 @@ export class PlacesPage {
     console.log('Hello PlacesPage Page');
   }
   
-  
   /*public getPlaces() {
     this.auth.getPlaces()
       .subscribe(

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Contacts } from 'ionic-native';
+import {Contacts} from 'ionic-native';
 
 /*
   Generated class for the Friends page.
@@ -28,7 +28,16 @@ export class FriendsPage {
           });
         },1000)*/
 
-        Contacts.find(['valérie']).then((contacts) => {
+        Contacts.find(['*'], {
+          filter: 'valérie',
+          multiple: true,
+          desiredFileds: [
+            'displayName',
+            'name',
+            'phoneNumbers',
+            'emails'
+          ]
+        }).then((contacts) => {
           contacts.forEach( (c)=> {
             if (c.name.givenName && c.phoneNumbers) {
               this.contactsfound.push({name: c.name.givenName, phone: c.phoneNumbers[0].value}); // grab only the properties you need avoiding birthday (ios bug on date formating) http://stackoverflow.com/questions/36798316/ionic-cordova-contacts-plugin-returns-invalid-date-on-ios-after-upgrade-to-ionic

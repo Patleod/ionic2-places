@@ -12,5 +12,19 @@
 
 
 <ion-content padding>
-
+<ion-list>
+    <ion-item>
+      <ion-label >Name</ion-label>
+      <ion-input type="text" [(ngModel)]="name"></ion-input>
+    </ion-item>  
+    <ion-item>
+      <ion-label >Description</ion-label>
+      <ion-input type="text" [(ngModel)]="description"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button color="dark" round (click)="onClickCamera()">
+    <ion-icon name="camera"></ion-icon>
+    Take Picture
+  </button>
+  <img [src]="base64Image">
 </ion-content>

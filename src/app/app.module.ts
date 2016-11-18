@@ -11,6 +11,7 @@ import {Auth} from '../providers/auth'
 import {Map} from '../components/map/map';
 import {SortAsc} from '../pipes/sort-asc';
 import {GroupBy} from '../pipes/group-by';
+import {Settings} from '../providers/settings'
 
 const app:Array<any>=[MyApp];
 const pages:Array<any> = Routes.getPages();
@@ -52,6 +53,7 @@ export function getAuthHttp(http) {
    },
    Endpoints,
    Auth,
+   Settings,
   ],
   bootstrap: [IonicApp],
   entryComponents: app.concat(pages),

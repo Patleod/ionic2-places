@@ -19,7 +19,6 @@ export class SettingsPage implements OnInit {
   constructor(public navCtrl: NavController, public settings: Settings) {}
 
   ngOnInit() {
-    debugger;
     this.mySettings = this.settings.settings;
   }
 

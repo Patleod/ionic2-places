@@ -6,18 +6,18 @@ import { Routes } from './app.routes';
 import { AuthHttp, AuthConfig } from 'angular2-jwt';
 import { Http } from '@angular/http';
 import { Storage } from '@ionic/storage';
-import {Endpoints} from '../providers/endpoints'
-import {Auth} from '../providers/auth'
-import {Map} from '../components/map/map';
-import {SortAsc} from '../pipes/sort-asc';
-import {GroupBy} from '../pipes/group-by';
-import {Settings} from '../providers/settings'
+import { Endpoints } from '../providers/endpoints'
+import { Auth } from '../providers/auth'
+import { MapComponent } from '../components/map/map';
+import { SortAsc } from '../pipes/sort-asc';
+import { GroupBy } from '../pipes/group-by';
+import { Settings } from '../providers/settings'
 
 const app:Array<any>=[MyApp];
 const pages:Array<any> = Routes.getPages();
 const components:Array<any> = [
   HeaderContentComponent,
-  Map,
+  MapComponent,
 ];
 const pipes:Array<any> = [SortAsc, GroupBy];
 const appIonicConfig = {

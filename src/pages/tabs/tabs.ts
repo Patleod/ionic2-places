@@ -5,8 +5,8 @@ import { AddPage } from '../add/add';
 import { AroundPage } from '../around/around';
 import { FriendsPage } from '../friends/friends';
 import { Routes } from '../../app/app.routes';
-import {Auth} from '../../providers/auth';
-
+import { Auth } from '../../providers/auth';
+import { Settings } from '../../providers/settings';
 /*
   Generated class for the Tabs tabs.
 

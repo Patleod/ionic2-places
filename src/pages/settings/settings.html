@@ -15,10 +15,9 @@
 
 <ion-content padding>
   <ion-list>
-
     <ion-item *ngFor="let setting of mySettings">
       <ion-label>{{setting.name}}</ion-label>
-      <ion-toggle [(ngModel)]="settings.value"></ion-toggle>
+      <ion-toggle [(ngModel)]="setting.value"></ion-toggle>
     </ion-item>
   </ion-list>
 </ion-content>

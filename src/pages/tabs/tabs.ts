@@ -35,4 +35,7 @@ export class TabsPage {
     this.navCtrl.setRoot(Routes.getRootPage(false));
   }
 
+  public goSettings() {
+    this.navCtrl.setRoot(Routes.getPage(Routes.SETTINGS));
+  }
 }
